@@ -1,0 +1,172 @@
+body{
+    background: #F3F5FC;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    width: 1240px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+}
+
+.main-box{
+    width: 100%;
+    /*background-color: #F3F5FC;*/
+    display: flex;
+    align-items: center;
+}
+
+/* TEXTO INPUT */
+
+.logo{
+    position: static;
+    width: 120px;
+    height: 48px;
+}
+
+.left-box{
+    width: 60%;
+    padding: 40px 0px;
+    /*background: rgb(216, 112, 112);*/
+    box-sizing: border-box;
+    float: left;
+}
+
+.caja-texto{
+    padding: 30px 100px;
+}
+
+textarea{
+    width: 100%;
+    height: 500px;
+    left: 140px;
+    top: 168px;
+    font-size: 20px;
+    color: #0A3871;
+    border: none;
+    background: none;
+    resize: none;
+}
+
+textarea:focus {
+    border: none;
+    outline: none;
+}
+
+button{
+    border-radius: 24px;
+    padding: 10px 20px;
+    width: 228px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 10px 10px 0;
+}
+
+br + button{
+    background: #0A3871;
+    color: #FFFFFF;
+}
+
+button + button{
+    background: #D8DFE8;
+    color: #0A3871;
+}
+
+button + p{
+    font-size: 10px;
+}
+
+/* RESULTADO */
+
+#right-box, #right-box-hidden{
+    width: 35%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#right-box{
+    padding: 100px 40px;
+}
+
+#right-box h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#right-box p{
+    font-size: 15px;
+    margin: 15px 0px;
+}
+
+#right-box-hidden{
+    display: none;
+    padding: 40px 40px;
+}
+
+@media screen and (max-width: 768px){
+
+    main{
+        width: 100%;
+        height: auto;
+    }
+    
+    .main-box{
+        display: grid;
+    }
+
+    .left-box{
+        width: 100%;
+    }
+
+    .caja-texto{
+        padding: 20px 50px;
+        margin-top: 50px;
+    }
+
+    button{
+        width: 48%;
+    }
+
+    #right-box-hidden textarea{
+        height: 200px;
+    }
+
+    #right-box, #right-box-hidden{
+        width: 90%;
+        padding: 20px 40px;
+        margin-bottom: 20px;
+    }
+
+    #right-box img{
+        display: none;
+    }
+
+    #copy-button{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px){
+
+    .caja-texto{
+        padding: 20px 20px;
+    }
+
+    button{
+
+        width: 100%;
+    }
+
+    textarea{
+        height: 300px;
+    }
+
+    textarea + p{
+        font-size: 13px;
+    }
+}
